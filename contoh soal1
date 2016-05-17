@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout << "Jumlah Bilangan  = ";
+    cin >> n;
+
+    int A[n];
+
+    for (int C=1; C<=n; C++)
+    {
+      cout << "Nilai ke-[" << C << "] = ";
+      cin >> A[C];
+
+    }
+
+    cout << endl << "Nilai yang anda masukkan : ";
+    for (int C=1; C<=n; C++)
+    {
+        cout << "[" << A[C] <<"] ";
+    }
+    cout << endl;
+return 0;
+}
