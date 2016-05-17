@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,i;
+    i = 0;
+
+    cout << "Jumlah Mahasiswa  = ";
+    cin >> n;
+    cout << endl;
+
+    int A[n];
+    string B[n];
+
+
+    for (int C=0; C<n; C++)
+    {
+        i++;
+      cout << "Masukkan NIM "<< i << "= ";
+      cin >> A[C];
+      cout << "Masukkan Nama " << i << "= ";
+      cin >> B[C];
+      cout << endl;
+    }
+    cout << endl << "Data Mahasiswa" << endl << "---------------------------" << endl;
+
+    i = 0;
+    for (int C=0; C<n; C++)
+    {
+        i++;
+        cout << "NIM " << i <<"= " << A[C] << endl;
+        cout << "Nama " << i <<"= " << B[C];
+        cout << endl;
+    }
+    cout << endl;
+return 0;
+}
